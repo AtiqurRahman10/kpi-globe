@@ -1,0 +1,86 @@
+.card {
+  box-shadow: $card-box-shadow;
+  .card-header {
+    padding: $card-header-padding;
+  }
+
+  .card-body {
+    font-family: $font-family-sans-serif;
+    padding: $card-body-padding;
+    .rapgod {
+      margin: 0px;
+      background: radial-gradient(#cecece, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%rem;
+      .scontainer {
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background: linear-gradient(
+          165deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgb(220, 220, 220) 40%,
+          rgb(170, 170, 170) 98%,
+          rgb(10, 10, 10) 100%
+        );
+        position: relative;
+
+        .sphere {
+        }
+        .sphere:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          border-bottom: 0 solid #ffffff05;
+
+          box-shadow: 0 -10px 20px 20px #ffffff40 inset,
+            0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
+            0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+            0 5px 5px #ffffff90, 0 10px 15px #ffffff60,
+            0 10px 20px 20px #ffffff40;
+          filter: blur(3px);
+          animation: 2s rotate linear infinite;
+        }
+
+        @keyframes rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    &.card-plain {
+      background-color: $card-plain-bg-color;
+      box-shadow: $card-plain-box-shadow;
+    }
+
+    .card-footer {
+      padding: $card-footer-padding;
+      background-color: transparent;
+    }
+  }
+
+  .author {
+    display: $card-author-display;
+
+    .name > span {
+      line-height: $card-author-name-line-height;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-sm;
+      color: $card-author-name-color;
+    }
+
+    .stats {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+
+@import "cards/card-background";

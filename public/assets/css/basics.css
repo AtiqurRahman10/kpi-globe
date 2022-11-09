@@ -1,0 +1,533 @@
+/* FONTS
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunitosans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url('../fonts/syne-regular-webfont.woff2') format('woff2'),
+        url('../fonts/syne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1.5em;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+/* VARIABLES
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
+:root {
+    /* COLORS*/
+    --color-green: #38D6AE;
+    --color-purple: #38d6ae;
+    --color-blue: #202733;
+    --color-pink: #f82c91;
+    --color-black: #202733;
+    --color-white: #f8f8f8;
+    --color-grey-light: #BFBFBF;
+    --gradient-background: linear-gradient(180deg, rgba(26, 32, 44, 1) 0%, rgba(21, 26, 35, 1) 50%, rgba(17, 21, 28, 1) 100%);
+
+    /* UNITS */
+    --gutter: 7.5px;
+    --font-size: 16px;
+
+    /* FONTS */
+    --font-syne: 'Syne', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
+}
+
+@media only screen and (min-width: 1280px) {
+    :root {
+        /* UNITS */
+        --gutter: 10px;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    :root {
+        /* UNITS */
+        --gutter: 15px;
+    }
+}
+
+/* UI ELEMENTS
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    color: var(--color-white);
+    font-family: var(--font-nunito);
+}
+
+*[data-anchor] {
+    cursor: pointer;
+}
+
+.bg-green {
+    background-color: var(--color-green) !important;
+}
+
+.bg-pink {
+    background-color: var(--color-pink) !important;
+}
+
+.bg-purple {
+    background-color: var(--color-purple) !important;
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+.color-pink {
+    color: var(--color-pink);
+}
+
+.color-purple {
+    color: var(--color-purple);
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-center img {
+    display: inline-block;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--color-blue);
+    font-family: var(--font-nunito);
+    font-weight: 600;
+    background-color: var(--color-green);
+    line-height: 44px;
+    padding: 0 4rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--color-black);
+}
+
+.btn-pink {
+    background-color: var(--color-green);
+}
+
+/* =============================== WRAPPERS */
+.full-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.full-section-auto {
+    padding-top: calc(var(--gutter) * 9);
+    align-items: initial;
+}
+
+.center-wrapper {
+    width: 100%;
+    max-width: 1660px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+table {
+    width: 100%;
+    font-family: var(--font-nunito);
+}
+
+table thead {
+    line-height: 40px;
+    background-color: var(--color-blue);
+    font-size: .75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+table th,
+table td {
+    padding: var(--gutter);
+    border-radius: 4px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, .35);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+table tbody tr:hover {
+    background-color: var(--color-purple);
+}
+
+/* =============================== HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    display: block;
+    transition: all .75s .25s ease-in-out;
+}
+
+.bar-0 {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--color-green);
+    border-bottom: 2px solid transparent;
+    z-index: 2;
+}
+
+.bar-1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: var(--color-blue);
+    z-index: 0;
+    height: auto;
+    opacity: 1;
+    min-height: 50px;
+}
+
+.top-menus {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s .5s ease-in-out;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    font-size: 26px;
+    margin: -3px 0 0 0;
+    color: #061a32;
+}
+
+.burguer-menu {
+    margin-right: 20px;
+    color: #061a32;
+}
+
+.info-menu {
+    display: flex;
+    align-items: center;
+    color: #061a32;
+}
+
+.btn-infos,
+.btn-exit {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+    background-image: url(../img/icon-info.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.btn-exit {
+    background-image: url(../img/icon-exit.png);
+}
+
+.btn-infos:hover,
+.btn-infos.active,
+.btn-exit:hover,
+.btn-exit.active {
+    background-position: bottom;
+}
+
+.page-title {
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 1680px) {
+    .top-bar {
+        height: 70px;
+    }
+
+    .bar-1 {
+        top: 70px;
+        height: auto;
+        min-height: 70px;
+    }
+
+    .top-menus {
+        height: 70px;
+    }
+}
+
+/* =============================== DROPDOWN FILTERS */
+.filters-box {
+    display: flex;
+}
+
+.keymoments .filters-bubbles {
+    display: flex;
+}
+
+.keymoments .filters-lines {
+    display: none;
+}
+
+.loveandhate .filters-bubbles {
+    display: none;
+}
+
+.loveandhate .filters-lines {
+    display: flex;
+}
+
+.pointsbypoints .filters-bubbles,
+.pointsbypoints .filters-lines {
+    display: none;
+}
+
+.apply-filters {
+    margin: 0 auto calc(var(--gutter) * 4) auto;
+    display: none;
+}
+
+.filters-collunm {
+    width: 100%;
+    max-width: calc(25% - 43px);
+    margin-left: 43px;
+}
+
+.filters-collunm .dropdown-menu {
+    margin-bottom: calc(var(--gutter) * 4);
+}
+
+button.dropdown-toggle {
+    height: 50px;
+    vertical-align: middle;
+    padding: 0 10px;
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-white);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 4px solid transparent;
+    transition: border-color .25s ease-in-out;
+}
+
+button.dropdown-toggle:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--color-purple);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .25s ease-in-out;
+}
+
+button.dropdown-toggle:hover,
+button.dropdown-toggle.active {
+    border-bottom: 4px solid var(--color-purple);
+}
+
+button.dropdown-toggle:hover:before,
+button.dropdown-toggle.active:before {
+    opacity: 0.4;
+}
+
+button.dropdown-toggle:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon-chevron-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+    transform: rotate(90deg);
+}
+
+button.dropdown-toggle.active:after {
+    transform: rotate(-90deg);
+}
+
+.active button.dropdown-toggle {
+    border-bottom: 4px solid var(--color-green);
+}
+
+button.reset-filters {
+    display: none;
+    height: 50px;
+    vertical-align: middle;
+    background-color: transparent;
+    color: var(--color-white);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    right: 0;
+}
+
+button.reset-filters:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/icon-reset-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.filters-collunm a {
+    color: var(--color-white);
+    font-family: var(--font-nunito);
+    font-size: 15px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
+    padding: 8px;
+    min-height: 40px;
+}
+
+.filters-collunm a:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 10px;
+    border: 1px solid #cacaca;
+}
+
+.filters-collunm a:after {
+    content: "";
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 13px;
+    background-color: var(--color-green);
+}
+
+.filters-collunm a.checked:after {
+    display: block;
+}
+
+.filters-collunm [type="checkbox"] {
+    margin-right: 10px;
+    opacity: 0;
+}
+
+@media only screen and (min-width: 1680px) {
+    button.dropdown-toggle {
+        height: 70px;
+    }
+}
+
+/* <select> styles */
+select.custom-select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    line-height: 40px;
+    border-bottom: 1px solid var(--color-white);
+    /* Personalize */
+    width: auto;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+select.custom-select option {
+    color: inherit;
+    background-color: var(--color-blue);
+    line-height: 40px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+select.custom-select:focus {
+    outline: none;
+}
+
+select.custom-select::-ms-expand {
+    display: none;
+}

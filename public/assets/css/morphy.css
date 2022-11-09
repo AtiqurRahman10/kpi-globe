@@ -1,0 +1,779 @@
+section.welcome {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.welcome .welcomecontainer1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+
+section.welcome .welcomecontainer1 .welcomecard1 {
+    z-index: 3;
+    position: relative;
+    width: 15vw;
+    height: 60vh;
+    margin: 0 30px 30px 30px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: linear-gradient(180deg,
+            rgba(109, 211, 176, 0.48) 0%,
+            rgba(89, 32, 245, 0.48) 50%,
+            rgba(18, 26, 50, 0.48) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+section.welcome .welcomecontainer1 .welcomecard1:hover .content i {
+    color: #6dd3b0;
+    transition: 0.5s;
+}
+
+section.welcome .welcomecontainer1 .welcomecard1 .content {
+    padding: 1.5vw;
+    text-align: left;
+}
+
+section.welcome .welcomecontainer1 .welcomecard1 .content p {
+    font-size: 0.95vw;
+    color: #6dd3b0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    margin-top: auto;
+}
+
+section.welcome .welcomecontainer1 .welcomecard1 .content i {
+    color: transparent;
+    transition: 0.5s;
+    font-size: 1.25vw;
+}
+
+section.welcome .welcomecontainer1 .welcomecard1 .content a {
+    position: relative;
+    display: inline-block;
+    padding: 1vw 2vw;
+    margin-top: auto;
+    background-color: #fff;
+    color: #061a32;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(6, 26, 50, 0.2);
+}
+
+section.welcome .welcomecontainer1 .welcomecard2 {
+    z-index: 2;
+    position: relative;
+    width: 14vw;
+    height: 55vh;
+    margin: 0 25px 25px -50px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: #38d6ae;
+    background: linear-gradient(180deg,
+            rgba(109, 211, 176, 0.48) 0%,
+            rgba(89, 32, 245, 0.48) 50%,
+            rgba(18, 26, 50, 0.48) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+section.welcome .welcomecontainer1 .welcomecard2:hover .content i {
+    color: #6dd3b0;
+    transition: 0.5s;
+}
+
+section.welcome .welcomecontainer1 .welcomecard2 .content {
+    padding: 1.65vw;
+    text-align: left;
+}
+
+section.welcome .welcomecontainer1 .welcomecard2 .content p {
+    font-size: 0.8vw;
+    color: #6dd3b0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    margin-top: auto;
+}
+
+section.welcome .welcomecontainer1 .welcomecard2 .content i {
+    color: transparent;
+    transition: 0.5s;
+    font-size: 1.1vw;
+}
+
+section.welcome .welcomecontainer1 .welcomecard2 .content a {
+    position: relative;
+    display: inline-block;
+    padding: 1vw 2vw;
+    margin-top: auto;
+    background-color: #fff;
+    color: #061a32;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(6, 26, 50, 0.2);
+}
+
+section.welcome .welcomecontainer1 .welcomecard3 {
+    z-index: 0;
+    position: relative;
+    width: 13vw;
+    height: 50vh;
+    margin: 0 80px 30px -50px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: linear-gradient(180deg,
+            rgba(235, 83, 159, 0.25) 0%,
+            rgba(89, 32, 245, 0.25) 50%,
+            rgba(18, 26, 50, 0.25) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+section.welcome .welcomecontainer2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+
+section.welcome .welcomecontainer2 .welcomecard1 {
+    z-index: 3;
+    position: relative;
+    width: 15vw;
+    height: 60vh;
+    margin: 0 30px 30px 30px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: linear-gradient(180deg,
+            rgba(235, 83, 159, 0.48) 0%,
+            rgba(89, 32, 245, 0.48) 50%,
+            rgba(18, 26, 50, 0.48) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+section.welcome .welcomecontainer2 .welcomecard1:hover .content i {
+    color: #eb539f;
+    transition: 0.5s;
+}
+
+section.welcome .welcomecontainer2 .welcomecard1 .content {
+    padding: 1.5vw;
+    text-align: left;
+}
+
+section.welcome .welcomecontainer2 .welcomecard1 .content p {
+    font-size: 0.95vw;
+    color: #eb539f;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    margin-top: auto;
+}
+
+section.welcome .welcomecontainer2 .welcomecard1 .content i {
+    color: transparent;
+    transition: 0.5s;
+    font-size: 1.25vw;
+}
+
+section.welcome .welcomecontainer2 .welcomecard1 .content a {
+    position: relative;
+    display: inline-block;
+    padding: 1vw 2vw;
+    margin-top: auto;
+    background-color: #fff;
+    color: #061a32;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(6, 26, 50, 0.2);
+}
+
+section.welcome .welcomecontainer2 .welcomecard2 {
+    z-index: 2;
+    position: relative;
+    height: 55vh;
+    width: 14vw;
+    margin: 0 -50px 25px 25px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: #38d6ae;
+    background: linear-gradient(180deg,
+            rgba(109, 211, 176, 0.48) 0%,
+            rgba(89, 32, 245, 0.48) 50%,
+            rgba(18, 26, 50, 0.48) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+section.welcome .welcomecontainer2 .welcomecard2:hover .content i {
+    color: #6dd3b0;
+    transition: 0.5s;
+}
+
+section.welcome .welcomecontainer2 .welcomecard2 .content {
+    padding: 1.65vw;
+    text-align: left;
+}
+
+section.welcome .welcomecontainer2 .welcomecard2 .content p {
+    font-size: 0.8vw;
+    color: #6dd3b0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    margin-top: auto;
+}
+
+section.welcome .welcomecontainer2 .welcomecard2 .content i {
+    color: transparent;
+    transition: 0.5s;
+    font-size: 1.1vw;
+}
+
+section.welcome .welcomecontainer2 .welcomecard2 .content a {
+    position: relative;
+    display: inline-block;
+    padding: 1vw 2vw;
+    margin-top: auto;
+    background-color: #fff;
+    color: #061a32;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(6, 26, 50, 0.2);
+}
+
+section.welcome .welcomecontainer2 .welcomecard3 {
+    z-index: 0;
+    position: relative;
+    width: 13vw;
+    height: 50vh;
+    margin: 0 -50px 30px 80px;
+    box-shadow: 20px 20px 50px rgba(6, 26, 50, 0.29);
+    background: linear-gradient(180deg,
+            rgba(109, 211, 176, 0.25) 0%,
+            rgba(89, 32, 245, 0.25) 50%,
+            rgba(18, 26, 50, 0.25) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(18, 26, 50, 0.1);
+    border-left: 1px solid rgba(18, 26, 50, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.centerthesvg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    position: absolute;
+    top: 60%;
+    background-color: transparent;
+}
+
+.welcomemorphy {
+    z-index: 1;
+    padding: 0;
+    top: 79vh;
+    left: 49.92%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url("https://assets.codepen.io/7773162/Morphy+Concept.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    pointer-events: none;
+    -webkit-animation: up-and-down 3s ease-in-out infinite alternate;
+    animation: up-and-down 3s ease-in-out infinite alternate;
+}
+
+.welcomemorphy:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    bottom: 2.5%;
+    left: 5%;
+    opacity: 0.6;
+    height: 100%;
+    width: 90%;
+    z-index: 2;
+}
+
+.welcomemorphy:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@-webkit-keyframes up-and-down {
+    0% {
+        transform: translate(-50%, -85%);
+    }
+
+    100% {
+        transform: translate(-50%, -80%);
+    }
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translate(-50%, -85%);
+    }
+
+    100% {
+        transform: translate(-50%, -80%);
+    }
+}
+
+@-webkit-keyframes big-shadow {
+    0% {
+        top: -20%;
+        left: 30%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@keyframes big-shadow {
+    0% {
+        top: -20%;
+        left: 30%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@-webkit-keyframes small-shadow {
+    0% {
+        top: -80%;
+        left: 50%;
+    }
+
+    100% {
+        top: -30%;
+        left: 20%;
+    }
+}
+
+@keyframes small-shadow {
+    0% {
+        top: -80%;
+        left: 50%;
+    }
+
+    100% {
+        top: -30%;
+        left: 20%;
+    }
+}
+
+.welcomemorphystage {
+    z-index: 1;
+    padding: 0;
+    top: 68vh;
+    left: 49.2%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url("https://assets.codepen.io/7773162/Morphystage.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    pointer-events: none;
+}
+
+.welcomeclouds {
+    z-index: 5;
+    padding: 0;
+    top: 56vh;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url("https://assets.codepen.io/7773162/newfrontclouds.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    pointer-events: none;
+}
+
+.LoaderBalls {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LoaderBalls__item {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #38d6ae;
+}
+
+.LoaderBalls__item:nth-child(1) {
+    -webkit-animation: bouncing 0.9s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95);
+    animation: bouncing 0.9s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.LoaderBalls__item:nth-child(2) {
+    -webkit-animation: bouncing 0.9s 0.1285714286s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    animation: bouncing 0.9s 0.1285714286s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.LoaderBalls__item:nth-child(3) {
+    -webkit-animation: bouncing 0.9s 0.15s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    animation: bouncing 0.9s 0.15s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.LoaderBalls__item:nth-child(4) {
+    -webkit-animation: bouncing 0.9s 0.18s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    animation: bouncing 0.9s 0.18s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.LoaderBalls__item:nth-child(5) {
+    -webkit-animation: bouncing 0.9s 0.225s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    animation: bouncing 0.9s 0.225s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.LoaderBalls__item:nth-child(6) {
+    -webkit-animation: bouncing 0.9s 0.3s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    animation: bouncing 0.9s 0.3s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.welcomecard2:hover .LoaderBalls__item:nth-child(n) {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes bouncing {
+    0% {
+        transform: translate3d(0, 7.5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -15px, 0);
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translate3d(0, 7.5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -15px, 0);
+    }
+}
+
+.ap {
+    width: 46%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ap__ring {
+    stroke: #38d6ae;
+    transition: stroke 0.3s;
+}
+
+.ap__worm1,
+.ap__worm2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.ap__worm1 {
+    -webkit-animation-name: worm1;
+    animation-name: worm1;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.ap__worm2 {
+    -webkit-animation-name: worm2;
+    animation-name: worm2;
+    visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: hsl(165, 65.8%, 52.9%);
+        --fg: hsl(165, 65.8%, 52.9%);
+    }
+
+    .ap__ring {
+        stroke: transparent;
+    }
+}
+
+.welcomecard1:hover .ap__worm1,
+.welcomecard1:hover .ap__worm2 {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+/* Animtions */
+@-webkit-keyframes worm1 {
+    from {
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        stroke-dashoffset: -87.96;
+    }
+
+    20% {
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dashoffset: -791.68;
+        visibility: visible;
+    }
+
+    60.1%,
+    to {
+        stroke-dashoffset: -791.68;
+        visibility: hidden;
+    }
+}
+
+@keyframes worm1 {
+    from {
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        stroke-dashoffset: -87.96;
+    }
+
+    20% {
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dashoffset: -791.68;
+        visibility: visible;
+    }
+
+    60.1%,
+    to {
+        stroke-dashoffset: -791.68;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes worm2 {
+
+    from,
+    60% {
+        stroke-dashoffset: -87.96;
+        visibility: hidden;
+    }
+
+    60.1% {
+        -webkit-animation-timing-function: cubic-bezier(0, 0, 0.5, 0.75);
+        animation-timing-function: cubic-bezier(0, 0, 0.5, 0.75);
+        stroke-dashoffset: -87.96;
+        visibility: visible;
+    }
+
+    77% {
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.25, 0.5, 0.88);
+        animation-timing-function: cubic-bezier(0.5, 0.25, 0.5, 0.88);
+        stroke-dashoffset: -340;
+        visibility: visible;
+    }
+
+    to {
+        stroke-dashoffset: -669.92;
+        visibility: visible;
+    }
+}
+
+@keyframes worm2 {
+
+    from,
+    60% {
+        stroke-dashoffset: -87.96;
+        visibility: hidden;
+    }
+
+    60.1% {
+        -webkit-animation-timing-function: cubic-bezier(0, 0, 0.5, 0.75);
+        animation-timing-function: cubic-bezier(0, 0, 0.5, 0.75);
+        stroke-dashoffset: -87.96;
+        visibility: visible;
+    }
+
+    77% {
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.25, 0.5, 0.88);
+        animation-timing-function: cubic-bezier(0.5, 0.25, 0.5, 0.88);
+        stroke-dashoffset: -340;
+        visibility: visible;
+    }
+
+    to {
+        stroke-dashoffset: -669.92;
+        visibility: visible;
+    }
+}
+
+.appearcard {
+    animation-name: appearcard-fade;
+    animation-fill-mode: backwards;
+}
+
+@keyframes appearcard-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.appearcard.pop {
+    animation-name: appearcard-pop;
+}
+
+@keyframes appearcard-pop {
+    0% {
+        opacity: 0;
+        transform: scale(1.6) translate(0, -80px);
+        filter: blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1) translate(0, 0);
+    }
+}
+
+.cdelay-1 {
+    animation-delay: 0.2s;
+    animation-duration: 0.6s;
+}
+
+.cdelay-2 {
+    animation-delay: 0.4s;
+    animation-duration: 0.6s;
+}
+
+.cdelay-3 {
+    animation-delay: 0.6s;
+    animation-duration: 0.75s;
+}
+
+.cdelay-4 {
+    animation-delay: 0.8s;
+    animation-duration: 0.75s;
+}
+
+.cdelay-5 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.cdelay-6 {
+    animation-delay: 1.2s;
+    animation-duration: 1s;
+}
+
+.mbsvg {
+    margin-bottom: 4vh;
+    width: 100%;
+    height: 40%;
+    top: 0;
+}

@@ -1,0 +1,33 @@
+/*!
+
+=========================================================
+* Soft UI Dashboard Pro - v1.0.9
+=========================================================
+
+* Product Page: https://morphius.netlify.app/product/softui
+* Copyright 2022 90North (https://morphius.netlify.app)
+
+* Coded by morphius.netlify.app
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+// {{ site.product.name }} Core styling components
+
+@import "theme";
+
+// PRO Components
+@import "accordion";
+@import "backgrounds";
+@import "cards-extend";
+@import "components";
+@import "dark-version";
+@import "dropdown-extend";
+@import "floating-elements";
+@import "list-check";
+@import "misc-extend";
+// Plugins
+@import "plugins/pro/plugins-extend";

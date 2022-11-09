@@ -1,0 +1,227 @@
+/* SPECIFIC SCREENS
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
+
+.no-transitions .top-menus,
+.no-transitions .top-bar {
+    transition: none;
+}
+
+/* =============================== LOGIN SCREEN */
+.login-page, .default-page {
+    background-image: var(--gradient-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-page {
+    display: block;
+    padding-top: calc( var(--gutter) * 12 );
+}
+
+.login-box {
+    font-size: 21px;
+    max-width: 900px;
+}
+
+.login-form {
+    background-color: var(--color-blue);
+    margin: calc( var(--gutter) * 4 );
+    padding: calc( var(--gutter) * 4 );
+    border-radius: var(--gutter);
+}
+
+.form-group {
+    margin-bottom: calc( var(--gutter) * 2 );
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 520px;
+}
+
+.form-group.pw-generator {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.form-group.pw-generator .btn-generator {
+    padding: 0 2rem;
+    font-size: 16px;
+    background: transparent;
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+    margin: 0 10px;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background 10000s ease-in-out 0s;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder {
+    color: #878787;
+    font-size: inherit;
+    font-family: inherit;
+    opacity: .5;
+}
+
+input[type=email],
+input[type=password],
+input[type=text],
+select {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-white);
+    background-color: transparent;
+    line-height: 40px;
+    color: #878787;
+    font-size: inherit;
+    font-family: inherit;
+    opacity: 1; 
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 66.6666%;  
+}
+
+label {
+    display: block;
+    line-height: 40px;
+    color: var(--color-white);
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 0;
+    margin-right: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.3333%;
+    max-width: 100px;
+}
+
+label.short {
+    max-width: 70px;
+}
+
+#pw-eye {
+    display: block;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    align-self: center;
+    background-image: url(../img/icon-eyes.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 1;
+}
+
+#pw-eye.show {
+    background-position: bottom;
+}
+
+.plane {
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    0% {transform: translateY(0) rotateX(0) rotateY(5deg);}
+    25% {transform: translateY(-15px) rotateX(40deg) rotateY(10deg);}
+    50% {transform: rotateX(0) translateY(0) rotateY(15deg);}
+    75% {transform: rotateX(-40deg) translateY(15px) rotateY(10deg);}
+    100% {transform: rotateX(0) translateY(0) rotateY(5deg);}
+}
+
+/* =============================== USERS MANAGEMENT SCREEN */
+.switch {
+    display: inline-block;
+}
+
+.switch input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: grey;
+    display: inline-block;
+    border-radius: 25px;
+    position: relative;
+    max-width: initial;
+    margin: inherit;
+    line-height: initial;
+}
+
+.switch label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switch input:checked + label {
+    background: var(--color-green);
+}
+
+.switch input:checked + label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+.switch label:active:after {
+    width: 50px;
+}
+
+table th.text-center, table td.text-center {
+    width: 10%;
+}
+
+.defautl-page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc( var(--gutter) * 3 );
+}
+
+.adm-edit, .adm-delete {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icon-edit.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.adm-delete {
+    background-image: url(../img/icon-delete.png);
+}
+
+.adm-edit:hover, .adm-delete:hover {
+    background-position: bottom;
+}
